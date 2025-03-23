@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { BackgroundCircles } from './ui/BackgroundCircles';
+import { GooeyText } from './ui/gooey-text-morphing';
 
 const Hero = () => {
   return (
@@ -16,8 +17,21 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Software Engineer | Team Lead
+            <div className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center">
+              <div className="h-[100px] mb-4">
+                <GooeyText
+                  texts={[
+                    "Software Engineer",
+                    "Team Lead",
+                    "Full Stack Developer",
+                    "Problem Solver"
+                  ]}
+                  morphTime={1}
+                  cooldownTime={1.5}
+                  className="font-bold"
+                  textClassName="text-4xl md:text-5xl bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 bg-clip-text text-transparent"
+                />
+              </div>
               <span className="block mt-4">
                 Passionate Software Engineer with expertise in backend and full-stack development.
                 Leading teams to deliver high-quality solutions and mentoring the next generation of developers.

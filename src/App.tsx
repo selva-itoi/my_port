@@ -7,6 +7,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import { Dock, DockIcon } from './components/ui/Dock';
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -49,32 +51,51 @@ function App() {
         <main className="pt-16">
           <Hero />
           <About />
+          <Skills />
           <Experience />
           <Projects />
-          <Skills />
           <Contact />
         </main>
 
-        <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-gray-600 dark:text-gray-400 text-center sm:text-left">© 2024 Selva Sivam B. All rights reserved.</p>
-              <div className="flex space-x-6">
-                <a href="mailto:contact.selvasivam@gmail.com" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400" aria-label="Email">
-                  <Mail className="w-5 h-5" />
-                </a>
-                <a href="tel:+917010044228" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400" aria-label="Phone">
-                  <Phone className="w-5 h-5" />
-                </a>
-                <a href="https://linkedin.com/in/selva-sivam-b-30943b301" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400" aria-label="LinkedIn">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400" aria-label="GitHub">
-                  <Github className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-          </div>
+        <footer className="fixed bottom-0 left-0 right-0 flex justify-center pb-6 z-50">
+          <Dock>
+            <DockIcon>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+            </DockIcon>
+            <DockIcon>
+              <a
+                href="https://linkedin.com/in/selva-sivam-b-30943b301"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+            </DockIcon>
+            <DockIcon>
+              <a
+                href="mailto:contact.selvasivam@gmail.com"
+                className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+              >
+                <Mail className="w-6 h-6" />
+              </a>
+            </DockIcon>
+            <DockIcon>
+              <a
+                href="tel:+917010044228"
+                className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+              >
+                <Phone className="w-6 h-6" />
+              </a>
+            </DockIcon>
+          </Dock>
         </footer>
       </div>
     </HelmetProvider>

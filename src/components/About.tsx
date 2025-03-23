@@ -1,6 +1,7 @@
 import React from 'react';
 import { Code2, Users, Brain } from 'lucide-react';
 import { FeatureSteps } from './ui/FeatureSteps';
+import { WarpBackground } from './ui/warp-background';
 
 const features = [
   {
@@ -30,39 +31,41 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
           About Me
         </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
-            <Code2 className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-              Technical Expertise
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Proficient in multiple programming languages and frameworks, with a focus on creating efficient and scalable solutions.
-            </p>
+
+        <WarpBackground className="mb-16 !p-8 md:!p-12 border-gray-200 dark:border-gray-700">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg">
+              <Code2 className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Technical Expertise
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Proficient in multiple programming languages and frameworks, with a focus on creating efficient and scalable solutions.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg">
+              <Users className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Team Leadership
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Successfully led teams of developers, improving project efficiency and mentoring junior developers to excellence.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg">
+              <Brain className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Continuous Learning
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Always eager to learn and explore innovative solutions, staying up-to-date with the latest technologies and best practices.
+              </p>
+            </div>
           </div>
-          
-          <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
-            <Users className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-              Team Leadership
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Successfully led teams of developers, improving project efficiency and mentoring junior developers to excellence.
-            </p>
-          </div>
-          
-          <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
-            <Brain className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-              Continuous Learning
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Always eager to learn and explore innovative solutions, staying up-to-date with the latest technologies and best practices.
-            </p>
-          </div>
-        </div>
-        
+        </WarpBackground>
+
         <div className="mt-12 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center">
           <p className="mb-4">
             Started my journey with PHP and expanded into modern technologies, now specializing in full-stack development
