@@ -5,7 +5,7 @@ import { Timeline } from './ui/Timeline';
 const Experience = () => {
   const projectsData = [
     {
-      title: "2024",
+      title: "2024 - Present",
       content: (
         <div>
           <h4 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white font-heading">Team Lead - ITOI Technologies</h4>
@@ -39,9 +39,10 @@ const Experience = () => {
 
   return (
     <section id="projects" className="relative bg-white dark:bg-gray-900 min-h-screen">
-      <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
+      <div className="absolute inset-y-0 right-0 z-0 opacity-40 pointer-events-none flex justify-end">
         <IconCloudDemo />
       </div>
+
       <Timeline data={projectsData} />
     </section>
   );

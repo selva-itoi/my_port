@@ -42,6 +42,13 @@ const Contact = () => {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
               Contact Information
             </h3>
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-8 border-4 border-blue-500/30">
+              <img
+                src="/images/my.png"
+                alt="Selva Sivam B"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <div className="space-y-6">
               <a

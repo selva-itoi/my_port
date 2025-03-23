@@ -93,7 +93,7 @@ const AnimatedGrid = () => (
 );
 
 export function BackgroundCircles({
-    title = "Background Circles",
+    title = "",
     description = "Optional Description",
     className,
     variant = "octonary",

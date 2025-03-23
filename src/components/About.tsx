@@ -31,6 +31,13 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
           About Me
         </h2>
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-8 mx-auto border-4 border-blue-500/30">
+          <img
+            src="/images/my.png"
+            alt="Selva Sivam B"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         <WarpBackground className="mb-16 !p-8 md:!p-12 border-gray-200 dark:border-gray-700">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
